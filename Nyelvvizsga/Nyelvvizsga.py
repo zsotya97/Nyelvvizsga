@@ -4,8 +4,6 @@ class Sikeres: #Sikeres vizsgaadatok beolvasása
         self.Nyelv=split[0]
         self.Evek = split[1:]
         self.Evszamok = [int(x) for x in self.Evek]
-        self.Arany = {}
-        self.Arany[self.Nyelv]=self.Arany.get(self.Nyelv, [x for x in self.Evek])
 
 class Sikertelen(Sikeres): #Sikertelen  vizsgaadatok beolvasása
     def __init__(self, sor):
