@@ -65,7 +65,7 @@ print("5. feladat:")
 
 #6. feladat:
 print("6. feladat: osszesites.txt")
-with open("osszesites.txt","w") as kiiras:
+with open("osszesites.csv","w") as kiiras:
     for x,y in osszegzes.items():
         szazalek= float((sikeresseg[x]/osszegzes[x])*100)
         kiiras.write(f"{x};{y};{szazalek:.2f}%\n")
